@@ -13,3 +13,203 @@ index.html
   <p>Phone / WhatsApp: 0000-0000000</p>
 </body>
 </html>
+index.html..
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Burhanuddin Juzer — Portfolio</title>
+  <meta name="description" content="Burhanuddin Juzer — 2D/3D Animation, VFX, Game & Web Development. Contact: burhanuddinjuzer95@gmail.com" />
+  <style>
+    :root{
+      --bg: #ffffff;
+      --card: #ffffff;
+      --text: #0b1220;
+      --muted: #6b7280;
+      --accent: #2b6cb0; /* blue accent */
+      --accent-2: #0ea5a4;
+      --radius: 12px;
+      --max-width: 980px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+      color:var(--text);
+      background:linear-gradient(180deg,#fbfdff 0%, #f7f9fb 100%);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.5;
+    }
+    .wrap{max-width:var(--max-width);margin:28px auto;padding:28px}
+    header{display:flex;gap:20px;align-items:center}
+    .avatar{
+      width:96px;height:96px;border-radius:12px;background:#f1f5f9;display:flex;align-items:center;justify-content:center;
+      font-weight:700;color:var(--accent);font-size:28px;border:1px solid rgba(15,23,42,0.04)
+    }
+    h1{margin:0;font-size:28px}
+    .title-small{color:var(--muted);margin-top:6px}
+    .hero{
+      margin-top:20px;padding:26px;border-radius:var(--radius);background:white;box-shadow:0 8px 28px rgba(11,19,40,0.04);
+      display:flex;flex-direction:column;gap:14px;
+    }
+    .hero .lead{font-size:20px;font-weight:600}
+    .hero p{margin:0;color:var(--muted)}
+    .btn-row{display:flex;gap:10px;flex-wrap:wrap}
+    .btn{
+      display:inline-block;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#3b82f6);
+      color:white;text-decoration:none;font-weight:700;font-size:14px;
+    }
+    .btn-ghost{
+      padding:10px 14px;border-radius:10px;border:1px solid rgba(11,19,40,0.06);
+      color:var(--accent);text-decoration:none;font-weight:600;background:transparent;
+    }
+
+    .layout{display:grid;grid-template-columns:1fr 320px;gap:22px;margin-top:20px}
+    .card{background:white;padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(11,19,40,0.03)}
+    .section-title{font-weight:700;margin-bottom:10px}
+    ul.skills{display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:0;list-style:none}
+    ul.skills li{background:#f8fafc;padding:8px 12px;border-radius:10px;color:var(--text);font-size:13px;border:1px solid rgba(11,19,40,0.03)}
+    .projects .project{margin-bottom:12px;padding:12px;border-radius:10px;background:linear-gradient(180deg, rgba(11,19,40,0.01), transparent)}
+    .project h4{margin:0 0 6px 0}
+    .muted{color:var(--muted);font-size:14px}
+    footer{margin-top:28px;text-align:center;color:var(--muted);font-size:13px}
+
+    /* responsive */
+    @media (max-width:900px){
+      .layout{grid-template-columns:1fr}
+      header{align-items:flex-start}
+    }
+
+    /* small utility */
+    .small{font-size:13px;color:var(--muted)}
+    .contact-row{display:flex;gap:10px;flex-wrap:wrap}
+    a.link{color:var(--accent);text-decoration:none;font-weight:600}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+
+    <!-- Header -->
+    <header>
+      <div class="avatar">BJ</div>
+      <div>
+        <h1>Burhanuddin Juzer</h1>
+        <div class="title-small">Expert in Any Work — 2D/3D, VFX, Games & Web</div>
+        <div class="small" style="margin-top:6px">Karachi, Pakistan</div>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="lead">I Turn Ideas into Polished Work — Animation, Games, VFX & Web</div>
+      <p class="muted">I create production-ready animations, 3D models, VFX composites, game prototypes and responsive websites. Fast delivery, clean files, and clear communication.</p>
+      <div class="btn-row">
+        <a class="btn" href="mailto:burhanuddinjuzer95@gmail.com">Email: burhanuddinjuzer95@gmail.com</a>
+        <a class="btn-ghost" href="https://github.com/burhanuddinjuzer95" target="_blank">GitHub</a>
+        <a class="btn" href="https://wa.me/923363667535" target="_blank">Contact on WhatsApp</a>
+        <a class="btn-ghost" href="cv.pdf" download>Download CV</a>
+      </div>
+    </section>
+
+    <!-- Main layout -->
+    <div class="layout">
+      <main>
+        <!-- About -->
+        <section class="card">
+          <div class="section-title">About</div>
+          <p class="muted">I'm a multi-disciplinary developer and artist specializing in 2D/3D animation, VFX, game development, web development, content writing and translation. I deliver clean, production-ready files and prototypes for games and web.</p>
+        </section>
+
+        <!-- Services -->
+        <section class="card" style="margin-top:16px">
+          <div class="section-title">Services</div>
+          <ul style="margin:0;padding-left:18px;color:var(--muted)">
+            <li>2D & 3D Animation — Short films, motion graphics</li>
+            <li>3D Modeling & Texturing — Game & VFX ready</li>
+            <li>VFX Compositing — After Effects / Nuke workflows</li>
+            <li>Game Development — Unity / Godot prototypes</li>
+            <li>Web Development — Portfolio & landing pages</li>
+            <li>Content Writing, Translation & Data Entry</li>
+          </ul>
+        </section>
+
+        <!-- Projects -->
+        <section class="card projects" style="margin-top:16px">
+          <div class="section-title">Selected Projects — Examples</div>
+
+          <div class="project">
+            <h4>2D Animated Short — "City Protector"</h4>
+            <div class="muted small">Tools: After Effects, Animate</div>
+            <p class="muted" style="margin-top:8px">A short action animation showcasing character performance, sound design and color grading. Deliverables: MP4, source project files.</p>
+          </div>
+
+          <div class="project">
+            <h4>3D Character Rig & Model — "Hero Rig"</h4>
+            <div class="muted small">Tools: Blender / Maya</div>
+            <p class="muted" style="margin-top:8px">Production-ready rig with textures and FBX/GLTF exports for games and cinematics.</p>
+          </div>
+
+          <div class="project">
+            <h4>Indie Platformer Prototype</h4>
+            <div class="muted small">Tools: Unity / Godot</div>
+            <p class="muted" style="margin-top:8px">Playable WebGL prototype with core mechanics and level design.</p>
+          </div>
+
+        </section>
+      </main>
+
+      <!-- Sidebar -->
+      <aside>
+        <div class="card">
+          <div class="section-title">Skills</div>
+          <ul class="skills">
+            <li>2D Animation</li>
+            <li>3D Animation</li>
+            <li>3D Modeling</li>
+            <li>VFX</li>
+            <li>Game Dev</li>
+            <li>Web Dev</li>
+            <li>Content Writing</li>
+            <li>Translation</li>
+            <li>Data Entry</li>
+          </ul>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <div class="section-title">Tools & Software</div>
+          <div class="muted small">Blender, Unity, Unreal, After Effects, Premiere, Photoshop, Illustrator, Spine, Godot, HTML/CSS/JS, React, Python, Figma, MS Office</div>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <div class="section-title">Contact</div>
+          <div class="muted small" style="margin-bottom:8px"><strong>Email:</strong> <a class="link" href="mailto:burhanuddinjuzer95@gmail.com">burhanuddinjuzer95@gmail.com</a></div>
+          <div class="muted small" style="margin-bottom:8px"><strong>GitHub:</strong> <a class="link" href="https://github.com/burhanuddinjuzer95" target="_blank">github.com/burhanuddinjuzer95</a></div>
+          <div class="muted small" style="margin-bottom:8px"><strong>WhatsApp:</strong> <a class="link" href="https://wa.me/923363667535" target="_blank">+92-336-3667535</a></div>
+          <div style="margin-top:10px" class="contact-row">
+            <a class="btn" href="mailto:burhanuddinjuzer95@gmail.com">Email</a>
+            <a class="btn" href="https://wa.me/923363667535" target="_blank">WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <div class="section-title">Work Process</div>
+          <ol style="margin:0;padding-left:18px;color:var(--muted)">
+            <li>Discuss brief & deliverables</li>
+            <li>Agree timeline & price</li>
+            <li>Deliver drafts for feedback</li>
+            <li>Final delivery + support</li>
+          </ol>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      <div>Ready to start a project? Email me or send a message on WhatsApp.</div>
+      <div style="margin-top:8px;color:var(--muted);font-size:12px">© Burhanuddin Juzer — Portfolio</div>
+    </footer>
+
+  </div>
+</body>
+</html>
