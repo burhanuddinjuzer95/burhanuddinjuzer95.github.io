@@ -21,6 +21,209 @@ index.html..
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Burhanuddin Juzer — Portfolio</title>
   <meta name="description" content="Burhanuddin Juzer — 2D/3D Animation, VFX, Game & Web Development. Contact: burhanuddinjuzer95@gmail.com" />
+  <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Burhanuddin Juzer — Animator, Developer & Creative Designer</title>
+  <meta name="description" content="Burhanuddin Juzer — 2D/3D Animation, VFX, Game & Web Development. Contact: burhanuddinjuzer95@gmail.com" />
+  <style>
+    :root{
+      --bg: #ffffff;
+      --card: #ffffff;
+      --text: #0b1220;
+      --muted: #6b7280;
+      --accent: #2b6cb0;
+      --accent-2: #0ea5a4;
+      --radius: 12px;
+      --max-width: 980px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      color:var(--text);
+      background:linear-gradient(180deg,#fbfdff 0%, #f7f9fb 100%);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.5;
+    }
+    .wrap{max-width:var(--max-width);margin:28px auto;padding:28px}
+    header{display:flex;gap:20px;align-items:center}
+    .avatar{
+      width:96px;height:96px;border-radius:12px;background:#f1f5f9;display:flex;align-items:center;justify-content:center;
+      font-weight:700;color:var(--accent);font-size:28px;border:1px solid rgba(15,23,42,0.04)
+    }
+    h1{margin:0;font-size:28px}
+    .title-small{color:var(--muted);margin-top:6px}
+    .hero{
+      margin-top:20px;padding:26px;border-radius:var(--radius);background:white;box-shadow:0 8px 28px rgba(11,19,40,0.04);
+      display:flex;flex-direction:column;gap:14px;
+    }
+    .hero .lead{font-size:20px;font-weight:600}
+    .hero p{margin:0;color:var(--muted)}
+    .btn-row{display:flex;gap:10px;flex-wrap:wrap}
+    .btn{
+      display:inline-block;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#3b82f6);
+      color:white;text-decoration:none;font-weight:700;font-size:14px;
+    }
+    .btn-ghost{
+      padding:10px 14px;border-radius:10px;border:1px solid rgba(11,19,40,0.06);
+      color:var(--accent);text-decoration:none;font-weight:600;background:transparent;
+    }
+
+    .layout{display:grid;grid-template-columns:1fr 320px;gap:22px;margin-top:20px}
+    .card{background:white;padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(11,19,40,0.03)}
+    .section-title{font-weight:700;margin-bottom:10px}
+    ul.skills{display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:0;list-style:none}
+    ul.skills li{background:#f8fafc;padding:8px 12px;border-radius:10px;color:var(--text);font-size:13px;border:1px solid rgba(11,19,40,0.03)}
+    .projects .project{margin-bottom:12px;padding:12px;border-radius:10px;background:linear-gradient(180deg, rgba(11,19,40,0.01), transparent)}
+    .project h4{margin:0 0 6px 0}
+    .muted{color:var(--muted);font-size:14px}
+    footer{margin-top:28px;text-align:center;color:var(--muted);font-size:13px}
+
+    @media (max-width:900px){
+      .layout{grid-template-columns:1fr}
+      header{align-items:flex-start}
+    }
+
+    .small{font-size:13px;color:var(--muted)}
+    .contact-row{display:flex;gap:10px;flex-wrap:wrap}
+    a.link{color:var(--accent);text-decoration:none;font-weight:600}
+    code{background:#f1f5f9;padding:2px 6px;border-radius:6px;font-size:12px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+
+    <!-- Header -->
+    <header>
+      <div class="avatar">BJ</div>
+      <div>
+        <h1>Burhanuddin Juzer</h1>
+        <div class="title-small">Animator, Developer & Creative Designer</div>
+        <div class="small" style="margin-top:6px">Karachi, Pakistan</div>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="lead" id="hero-heading">I Turn Ideas into Polished Work — Animation, Games, VFX & Web</div>
+      <p class="muted">I create production-ready animations, 3D models, VFX composites, game prototypes and responsive websites. Fast delivery, clean files, and clear communication — from concept to final export.</p>
+      <div class="btn-row">
+        <a class="btn" href="mailto:burhanuddinjuzer95@gmail.com">Email: burhanuddinjuzer95@gmail.com</a>
+        <a class="btn-ghost" href="https://github.com/burhanuddinjuzer95" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="https://wa.me/923363667535" target="_blank" rel="noopener">Contact on WhatsApp</a>
+        <a class="btn-ghost" href="cv.pdf" download>Download CV</a>
+      </div>
+    </section>
+
+    <!-- Main layout -->
+    <div class="layout" role="main">
+      <main>
+        <!-- About -->
+        <section class="card" id="about">
+          <div class="section-title">About</div>
+          <p class="muted">I am a multi-disciplinary creative professional with experience across animation, VFX, 3D modelling, game development and web development. I combine artistic skill with technical workflows to produce clean, production-ready assets — from short 2D/3D animation pieces and VFX composites to playable prototypes and responsive web pages. I prioritize clear communication, fast iteration, and delivering final files that are easy to integrate into pipelines.</p>
+          <p style="margin-top:10px" class="muted"><strong>Typical deliverables:</strong> MP4, ProRes, EXR, FBX/GLTF, WebGL builds, zipped project files, and clean source folders.</p>
+        </section>
+
+        <!-- Services -->
+        <section class="card" style="margin-top:16px" id="services">
+          <div class="section-title">Services</div>
+          <ul style="margin:0;padding-left:18px;color:var(--muted)">
+            <li><strong>2D & 3D Animation:</strong> Short films, motion graphics, character animation.</li>
+            <li><strong>3D Modelling & Texturing:</strong> Game-ready and cinematic assets, UV & PBR workflows.</li>
+            <li><strong>VFX & Compositing:</strong> Plate tracking, particle sims, color grading, After Effects / Nuke.</li>
+            <li><strong>Game Development:</strong> Unity / Godot prototypes, WebGL exports, level & mechanic design.</li>
+            <li><strong>Web Development:</strong> Portfolio/landing pages, responsive HTML/CSS/JS, React components.</li>
+            <li><strong>Content Writing & Translation:</strong> Project descriptions, scripts, Urdu/English translation, data entry.</li>
+          </ul>
+        </section>
+
+        <!-- Projects -->
+        <section class="card projects" style="margin-top:16px" id="projects">
+          <div class="section-title">Selected Projects — Examples</div>
+
+          <div class="project" aria-labelledby="proj1">
+            <h4 id="proj1">2D Animated Short — "City Protector"</h4>
+            <div class="muted small">Tools: After Effects, Adobe Animate — Deliverables: MP4, layered project files</div>
+            <p class="muted" style="margin-top:8px">A short action sequence showing character performance, camera moves, and integrated sound design. Clean exports and editable source files provided.</p>
+          </div>
+
+          <div class="project" aria-labelledby="proj2">
+            <h4 id="proj2">3D Character Rig & Model — "Hero Rig"</h4>
+            <div class="muted small">Tools: Blender / Maya — Deliverables: FBX/GLTF, textures, rig</div>
+            <p class="muted" style="margin-top:8px">Production-ready character with clean topology, UVs, PBR maps and a flexible rig suitable for games and cinematics.</p>
+          </div>
+
+          <div class="project" aria-labelledby="proj3">
+            <h4 id="proj3">Indie Platformer Prototype</h4>
+            <div class="muted small">Tools: Unity / Godot — Deliverables: WebGL build, standalone</div>
+            <p class="muted" style="margin-top:8px">Playable prototype showcasing core mechanics, level design and polished feel for early user testing.</p>
+          </div>
+
+        </section>
+      </main>
+
+      <!-- Sidebar -->
+      <aside>
+        <div class="card" id="skills">
+          <div class="section-title">Skills</div>
+          <ul class="skills" aria-label="Skills list">
+            <li>2D Animation</li>
+            <li>3D Animation</li>
+            <li>3D Modelling</li>
+            <li>VFX</li>
+            <li>Game Dev</li>
+            <li>Web Dev</li>
+            <li>Content Writing</li>
+            <li>Translation</li>
+            <li>Data Entry</li>
+          </ul>
+        </div>
+
+        <div class="card" style="margin-top:16px" id="tools">
+          <div class="section-title">Tools & Software</div>
+          <div class="muted small">Blender, Unity, Unreal, After Effects, Premiere Pro, Photoshop, Illustrator, Spine, Godot, HTML/CSS/JS, React, Python, Figma, MS Office</div>
+        </div>
+
+        <div class="card" style="margin-top:16px" id="contact">
+          <div class="section-title">Contact</div>
+          <div class="muted small" style="margin-bottom:8px"><strong>Email:</strong> <a class="link" href="mailto:burhanuddinjuzer95@gmail.com">burhanuddinjuzer95@gmail.com</a></div>
+          <div class="muted small" style="margin-bottom:8px"><strong>GitHub:</strong> <a class="link" href="https://github.com/burhanuddinjuzer95" target="_blank" rel="noopener">github.com/burhanuddinjuzer95</a></div>
+          <div class="muted small" style="margin-bottom:8px"><strong>WhatsApp:</strong> <a class="link" href="https://wa.me/923363667535" target="_blank" rel="noopener">+92-336-3667535</a></div>
+
+          <div style="margin-top:10px" class="contact-row">
+            <a class="btn" href="mailto:burhanuddinjuzer95@gmail.com">Email</a>
+            <a class="btn" href="https://wa.me/923363667535" target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+
+          <div style="margin-top:12px;color:var(--muted);font-size:12px">To change phone or other details, edit <code>index.html</code> and replace the text.</div>
+        </div>
+
+        <div class="card" style="margin-top:16px" id="process">
+          <div class="section-title">Work Process</div>
+          <ol style="margin:0;padding-left:18px;color:var(--muted)">
+            <li>Discuss brief & deliverables</li>
+            <li>Agree timeline & price</li>
+            <li>Deliver drafts for feedback</li>
+            <li>Final delivery + support</li>
+          </ol>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      <div>Ready to start a project? Email me or send a message on WhatsApp.</div>
+      <div style="margin-top:8px;color:var(--muted);font-size:12px">© Burhanuddin Juzer — Portfolio</div>
+    </footer>
+
+  </div>
+</body>
+</html>
+
   <style>
     :root{
       --bg: #ffffff;
